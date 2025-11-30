@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 - Naver</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Malgun Gothic", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    
+    <header class="bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-8">
+                    <h1 class="text-3xl font-bold text-green-600">NAVER</h1>
+                    <nav class="hidden md:flex gap-6">
+                        <a href="#" class="text-sm text-gray-700 hover:text-green-600">메일</a>
+                        <a href="#" class="text-sm text-gray-700 hover:text-green-600">카페</a>
+                        <a href="#" class="text-sm text-gray-700 hover:text-green-600">블로그</a>
+                        <a href="#" class="text-sm text-gray-700 hover:text-green-600">지식iN</a>
+                        <a href="#" class="text-sm text-gray-700 hover:text-green-600">쇼핑</a>
+                        <a href="#" class="text-sm text-gray-700 hover:text-green-600">뉴스</a>
+                    </nav>
+                </div>
+                <button class="text-sm text-gray-700 hover:text-green-600">로그인</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+             
+            <div class="lg:col-span-2 space-y-6">
+                 
+                <section class="bg-white rounded-lg shadow-sm p-8">
+                    <div class="max-w-2xl mx-auto">
+                        <form action="/search" method="get" class="mb-4">
+                            <div class="flex gap-2">
+                                <input 
+                                    type="text" 
+                                    name="q" 
+                                    placeholder="검색어를 입력하세요" 
+                                    class="flex-1 px-4 py-3 border-2 border-green-600 rounded-lg focus:outline-none focus:border-green-700"
+                                >
+                                <button 
+                                    type="submit" 
+                                    class="px-8 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 font-medium"
+                                >
+                                    검색
+                                </button>
+                            </div>
+                        </form>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-sm text-gray-600">실시간 검색어:</span>
+                            <a href="#" class="text-sm text-blue-600 hover:underline">1. 날씨</a>
+                            <a href="#" class="text-sm text-blue-600 hover:underline">2. 뉴스</a>
+                            <a href="#" class="text-sm text-blue-600 hover:underline">3. 주식</a>
+                            <a href="#" class="text-sm text-blue-600 hover:underline">4. 스포츠</a>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="bg-white rounded-lg shadow-sm p-6">
+                    <h2 class="text-lg font-bold mb-4">네이버 서비스</h2>
+                    <div class="grid grid-cols-4 md:grid-cols-6 gap-4">
+                        <a href="#" class="flex flex-col items-center gap-2 p-3 hover:bg-gray-50 rounded-lg">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-2xl">📧</div>
+                            <span class="text-xs text-gray-700">메일</span>
+                        </a>
+                        <a href="#" class="flex flex-col items-center gap-2 p-3 hover:bg-gray-50 rounded-lg">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-2xl">☕</div>
+                            <span class="text-xs text-gray-700">카페</span>
+                        </a>
+                        <a href="#" class="flex flex-col items-center gap-2 p-3 hover:bg-gray-50 rounded-lg">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-2xl">📝</div>
+                            <span class="text-xs text-gray-700">블로그</span>
+                        </a>
+                        <a href="#" class="flex flex-col items-center gap-2 p-3 hover:bg-gray-50 rounded-lg">
+                            <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-2xl">🛒</div>
+                            <span class="text-xs text-gray-700">쇼핑</span>
+                        </a>
+                        <a href="#" class="flex flex-col items-center gap-2 p-3 hover:bg-gray-50 rounded-lg">
+                            <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-2xl">📰</div>
+                            <span class="text-xs text-gray-700">뉴스</span>
+                        </a>
+                        <a href="#" class="flex flex-col items-center gap-2 p-3 hover:bg-gray-50 rounded-lg">
+                            <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center text-2xl">💰</div>
+                            <span class="text-xs text-gray-700">증권</span>
+                        </a>
+                    </div>
+                </section>
+
+              
+                <section class="bg-white rounded-lg shadow-sm p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-lg font-bold">뉴스</h2>
+                        <div class="flex gap-4 text-sm">
+                            <a href="#" class="text-green-600 font-medium">전체</a>
+                            <a href="#" class="text-gray-600 hover:text-green-600">정치</a>
+                            <a href="#" class="text-gray-600 hover:text-green-600">경제</a>
+                            <a href="#" class="text-gray-600 hover:text-green-600">사회</a>
+                            <a href="#" class="text-gray-600 hover:text-green-600">IT</a>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <article class="flex gap-4 pb-4 border-b border-gray-100">
+                            <img src="/placeholder.svg?height=80&width=120" alt="뉴스" class="w-30 h-20 object-cover rounded">
+                            <div class="flex-1">
+                                <h3 class="font-medium text-gray-900 mb-1 hover:underline cursor-pointer">
+                                    AI 기술 발전으로 새로운 시대 열려
+                                </h3>
+                                <p class="text-sm text-gray-600 mb-2">인공지능 기술이 빠르게 발전하면서 다양한 산업 분야에서 혁신이 일어나고 있습니다...</p>
+                                <span class="text-xs text-gray-500">연합뉴스 · 1시간 전</span>
+                            </div>
+                        </article>
+                        <article class="flex gap-4 pb-4 border-b border-gray-100">
+                            <img src="/placeholder.svg?height=80&width=120" alt="뉴스" class="w-30 h-20 object-cover rounded">
+                            <div class="flex-1">
+                                <h3 class="font-medium text-gray-900 mb-1 hover:underline cursor-pointer">
+                                    국내 경제 성장률 전망 상향 조정
+                                </h3>
+                                <p class="text-sm text-gray-600 mb-2">올해 경제 성장률이 당초 예상보다 높을 것으로 전망되면서 긍정적인 신호가...</p>
+                                <span class="text-xs text-gray-500">한국경제 · 2시간 전</span>
+                            </div>
+                        </article>
+                        <article class="flex gap-4 pb-4">
+                            <img src="/placeholder.svg?height=80&width=120" alt="뉴스" class="w-30 h-20 object-cover rounded">
+                            <div class="flex-1">
+                                <h3 class="font-medium text-gray-900 mb-1 hover:underline cursor-pointer">
+                                    새로운 스마트폰 출시, 혁신적 기능 탑재
+                                </h3>
+                                <p class="text-sm text-gray-600 mb-2">최신 스마트폰이 출시되며 소비자들의 관심이 집중되고 있습니다...</p>
+                                <span class="text-xs text-gray-500">IT조선 · 3시간 전</span>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+
+        
+            <div class="space-y-6">
+            
+                <section class="bg-white rounded-lg shadow-sm p-6">
+                    <h2 class="text-lg font-bold mb-4">날씨</h2>
+                    <div class="text-center mb-4">
+                        <p class="text-sm text-gray-600 mb-2">서울</p>
+                        <div class="text-5xl mb-2">☀️</div>
+                        <p class="text-3xl font-bold text-gray-900">23°C</p>
+                        <p class="text-sm text-gray-600 mt-1">맑음</p>
+                    </div>
+                    <div class="space-y-2 pt-4 border-t border-gray-200">
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-gray-600">월요일</span>
+                            <div class="flex items-center gap-2">
+                                <span>🌤️</span>
+                                <span class="text-gray-900">25° / 18°</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-gray-600">화요일</span>
+                            <div class="flex items-center gap-2">
+                                <span>☁️</span>
+                                <span class="text-gray-900">22° / 16°</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-gray-600">수요일</span>
+                            <div class="flex items-center gap-2">
+                                <span>🌧️</span>
+                                <span class="text-gray-900">19° / 15°</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            
+                <section class="bg-white rounded-lg shadow-sm p-6">
+                    <h2 class="text-lg font-bold mb-4">증권</h2>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm font-medium text-gray-900">KOSPI</p>
+                                <p class="text-xs text-gray-600">코스피</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-sm font-bold text-gray-900">2,645.78</p>
+                                <p class="text-xs text-red-600">▲ 15.32 (+0.58%)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm font-medium text-gray-900">KOSDAQ</p>
+                                <p class="text-xs text-gray-600">코스닥</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-sm font-bold text-gray-900">876.45</p>
+                                <p class="text-xs text-blue-600">▼ 3.21 (-0.36%)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm font-medium text-gray-900">USD/KRW</p>
+                                <p class="text-xs text-gray-600">환율</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-sm font-bold text-gray-900">1,325.50</p>
+                                <p class="text-xs text-red-600">▲ 2.30 (+0.17%)</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
